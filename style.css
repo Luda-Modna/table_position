@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 5px grey;
+  width: 600px;
+  height: 500px;
+}
+thead {
+  color: white;
+}
+thead :nth-child(1) {
+  background-color: #7787a9;
+}
+thead :nth-child(2) {
+  background-color: #4d628f;
+}
+thead :nth-child(3) {
+  background-color: #2a4271;
+}
+thead :nth-child(4) {
+  background-color: #152857;
+}
+
+tbody tr:nth-child(2n + 1) :nth-child(2n + 1) {
+  background-color: #dbdbdb;
+}
+tbody tr:nth-child(2n) :nth-child(2n + 1),
+tbody tr:nth-child(2n + 1) :nth-child(2n) {
+  background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(2n) :nth-child(2n) {
+  background-color: #f3f3f3;
+}
+
+tfoot :nth-child(2n + 1) {
+  background-color: #dbdbdb;
+}
+tfoot :nth-child(2n) {
+  background-color: #e6e6e6;
+}
+
+/*найтемніший сірий 
+
+середній сірий
+
+найсвітліший сірий #f3f3f3*/
